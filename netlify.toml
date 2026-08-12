@@ -1,0 +1,11 @@
+# bhwmedical.org — public marketing + education site (zero-build static)
+[build]
+  publish = "."
+
+# Public, patient-facing marketing site — DO index it (no noindex here on purpose).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"

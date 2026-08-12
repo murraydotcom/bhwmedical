@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &amp; Become a Patient | Baltimore Healthcare and Wellness</title>
+  <meta name="description" content="Contact Baltimore Healthcare and Wellness (BHW Medical Group) in Baltimore, MD — call (443) 762-5343 or request an appointment online. New patients welcome." />
+  <link rel="canonical" href="https://bhwmedical.org/contact.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Contact &amp; Become a Patient | Baltimore Healthcare and Wellness" />
+  <meta property="og:description" content="Call (443) 762-5343 or request an appointment online. New patients welcome in Baltimore, MD." />
+  <meta property="og:url" content="https://bhwmedical.org/contact.html" />
+  <meta property="og:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/bhw-tokens.css" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <style>
+    .field{margin-bottom:14px}
+    .field label{display:block;font-weight:700;font-size:13px;color:var(--deep);margin-bottom:6px}
+    .field input,.field textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:11px;background:var(--card);font:inherit;font-size:15px;color:var(--ink)}
+    .field textarea{min-height:120px;resize:vertical}
+    .hp{position:absolute;left:-9999px}
+    .note{font-size:13px;color:var(--ink-soft);margin-top:6px}
+    .ok{background:var(--sage);color:#1f3324;padding:14px 16px;border-radius:12px;font-weight:700;display:none}
+    .err{color:var(--alert,#b0525a);font-size:14px;margin-top:8px;display:none}
+  </style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" /><span>Baltimore Healthcare &amp; Wellness</span></a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav id="nav">
+      <a href="/programs.html">Programs</a>
+      <a href="/education.html">Education</a>
+      <a href="/insurance.html">Insurance</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta" href="https://mybhw.com">Patient Portal ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" style="padding:56px 0 40px">
+    <div class="wrap">
+      <div class="eyebrow">Contact us</div>
+      <h1>Become a patient</h1>
+      <p class="lead">Tell us a little about you and our team will reach out — usually within one business day — to help you get started and check your insurance.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="grid cols-2" style="gap:40px;align-items:start">
+        <div class="card">
+          <div class="ok" id="ok">Thank you — your request is in. Our team will reach out within one business day. For anything urgent, please call (443)&nbsp;762-5343.</div>
+          <form id="f">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" /></div>
+            <div class="field"><label for="message">How can we help?</label><textarea id="message" name="message" placeholder="New patient, question about a program, insurance, etc."></textarea></div>
+            <div class="hp"><label>Leave this blank<input id="company" name="company" type="text" tabindex="-1" autocomplete="off" /></label></div>
+            <button class="btn primary" type="submit" id="send" style="width:100%;justify-content:center">Send request</button>
+            <div class="err" id="err"></div>
+            <p class="note">By sending, you agree we may contact you about care. Please don't include sensitive medical details here.</p>
+          </form>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom:12px">Reach us directly</h3>
+          <p class="nap" style="color:var(--ink);font-size:16px;line-height:1.8">
+            <strong>Baltimore Healthcare and Wellness</strong><br />
+            BHW Medical Group<br />
+            2131 Maryland Ave<br />
+            Baltimore, MD 21218<br />
+            📞 <a href="tel:+14437625343">(443) 762-5343</a><br />
+            ✉️ <a href="mailto:info@baltimorehealthcare.org">info@baltimorehealthcare.org</a><br />
+            🕘 Mon–Fri · 9:00am–4:00pm
+          </p>
+          <div class="cta-row" style="margin-top:18px">
+            <a class="btn ghost" href="https://maps.google.com/?q=2131+Maryland+Ave+Baltimore+MD+21218" target="_blank" rel="noopener">Get directions ↗</a>
+            <a class="btn ghost" href="https://mybhw.com" target="_blank" rel="noopener">Existing patient? Portal ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand"><img src="/assets/bhw-wellness.png" alt="" /> Baltimore Healthcare &amp; Wellness</div>
+        <p class="nap">BHW Medical Group<br />2131 Maryland Ave<br />Baltimore, MD 21218<br /><a href="tel:+14437625343">(443) 762-5343</a><br /><a href="mailto:info@baltimorehealthcare.org">info@baltimorehealthcare.org</a><br />Mon–Fri · 9:00am–4:00pm</p>
+      </div>
+      <div><h4>Care</h4><a href="/programs.html">All programs</a><a href="/programs.html#primary-care">Primary Care</a><a href="/programs.html#mind-mood">Mind &amp; Mood</a><a href="/programs.html#flow">Flow</a><a href="/programs.html#charmed">CharmEd Minds</a><a href="/programs.html#chronic-care">Chronic Care</a></div>
+      <div><h4>Learn</h4><a href="/education.html">Education Hub</a><a href="/education.html#nutrition">Nutrition</a><a href="/education.html#sleep">Sleep</a><a href="/education.html#mental-health">Mental Health</a><a href="/education.html#movement">Movement</a></div>
+      <div><h4>Practice</h4><a href="/insurance.html">Insurance Accepted</a><a href="/about.html">About Us</a><a href="/contact.html">Contact</a><a href="https://mybhw.com">Patient Portal ↗</a></div>
+    </div>
+    <div class="fine"><span>© 2026 Baltimore Healthcare and Wellness · BHW Medical Group.</span><span>Serving Baltimore City &amp; surrounding counties.</span></div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+  // New-patient inquiry -> Front Desk triage queue (portal-message allows bhwmedical.org origins)
+  var OFFICE_API = 'https://bhwcrewos.netlify.app/.netlify/functions/portal-message';
+  document.getElementById('f').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var err = document.getElementById('err'); err.style.display='none';
+    var name = document.getElementById('name').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var msg = document.getElementById('message').value.trim();
+    if(!name || !phone){ err.textContent='Please add your name and phone.'; err.style.display='block'; return; }
+    var full = '[New patient inquiry from bhwmedical.org]' + (email ? ' Email: ' + email + '.' : '') + (msg ? ' ' + msg : '');
+    var btn = document.getElementById('send'); btn.disabled=true; btn.textContent='Sending…';
+    try{
+      var r = await fetch(OFFICE_API, {method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ name:name, phone:phone, message:full, hp:document.getElementById('company').value })});
+      if(!r.ok) throw new Error('bad status');
+      document.getElementById('f').style.display='none';
+      document.getElementById('ok').style.display='block';
+    }catch(_){
+      err.textContent='Sorry — that didn’t send. Please call (443) 762-5343 and we’ll help right away.';
+      err.style.display='block'; btn.disabled=false; btn.textContent='Send request';
+    }
+  });
+</script>
+</body>
+</html>

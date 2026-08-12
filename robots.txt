@@ -1,0 +1,5 @@
+# Baltimore Healthcare and Wellness — bhwmedical.org
+User-agent: *
+Allow: /
+
+Sitemap: https://bhwmedical.org/sitemap.xml
