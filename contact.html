@@ -12,25 +12,34 @@
   <meta property="og:url" content="https://bhwmedical.org/contact.html" />
   <meta property="og:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/bhw-tokens.css" />
   <link rel="stylesheet" href="/assets/site.css" />
   <style>
-    .field{margin-bottom:14px}
-    .field label{display:block;font-weight:700;font-size:13px;color:var(--deep);margin-bottom:6px}
-    .field input,.field textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:11px;background:var(--card);font:inherit;font-size:15px;color:var(--ink)}
-    .field textarea{min-height:120px;resize:vertical}
+    .formcard{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:34px 32px}
+    .field{margin-bottom:16px}
+    .field label{display:block;font-family:var(--font-ui);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--clay);margin-bottom:7px}
+    .field input,.field textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:2px;background:var(--bg);font:inherit;font-size:15px;color:var(--ink)}
+    .field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+    .field textarea{min-height:120px;resize:vertical;font-family:var(--font-serif)}
     .hp{position:absolute;left:-9999px}
-    .note{font-size:13px;color:var(--ink-soft);margin-top:6px}
-    .ok{background:var(--sage);color:#1f3324;padding:14px 16px;border-radius:12px;font-weight:700;display:none}
-    .err{color:var(--alert,#b0525a);font-size:14px;margin-top:8px;display:none}
+    .note{font-family:var(--font-serif);font-size:13.5px;color:var(--ink-soft);margin-top:8px}
+    .ok{background:var(--sage);color:#1f3324;padding:14px 16px;border-radius:2px;font-weight:600;display:none}
+    .err{color:var(--alert,#a85846);font-size:14px;margin-top:8px;display:none}
   </style>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="/"><img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" /><span>Baltimore Healthcare &amp; Wellness</span></a>
+    <a class="brand" href="/">
+      <img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" />
+      <span>
+        <span class="nm">Baltimore Healthcare &amp; Wellness</span>
+        <span class="sub">BHW Medical Group</span>
+      </span>
+    </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav id="nav">
       <a href="/programs.html">Programs</a>
@@ -44,18 +53,18 @@
 </header>
 
 <main>
-  <div class="hero" style="padding:56px 0 40px">
-    <div class="wrap">
+  <section class="pagehead">
+    <div class="wrap narrow">
       <div class="eyebrow">Contact us</div>
-      <h1>Become a patient</h1>
+      <h1 class="d-lg">Become a patient</h1>
       <p class="lead">Tell us a little about you and our team will reach out — usually within one business day — to help you get started and check your insurance.</p>
     </div>
-  </div>
+  </section>
 
   <section>
     <div class="wrap">
-      <div class="grid cols-2" style="gap:40px;align-items:start">
-        <div class="card">
+      <div class="grid loose cols-2" style="align-items:start">
+        <div class="formcard">
           <div class="ok" id="ok">Thank you — your request is in. Our team will reach out within one business day. For anything urgent, please call (443)&nbsp;762-5343.</div>
           <form id="f">
             <div class="field"><label for="name">Your name *</label><input id="name" name="name" type="text" autocomplete="name" required /></div>

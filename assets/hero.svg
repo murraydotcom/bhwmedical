@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Calm Baltimore skyline at dawn">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f1e7"/>
+      <stop offset="0.45" stop-color="#e9e5db"/>
+      <stop offset="1" stop-color="#d8dcd2"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ec0cf"/>
+      <stop offset="1" stop-color="#80abbd"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.28" r="0.4">
+      <stop offset="0" stop-color="#f0e2c4"/>
+      <stop offset="0.6" stop-color="#e6d8bf" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e6d8bf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <rect width="800" height="1000" fill="url(#sun)"/>
+  <circle cx="576" cy="270" r="86" fill="#eaddc4" opacity="0.85"/>
+
+  <!-- far skyline, palest -->
+  <g fill="#bcccca" opacity="0.7">
+    <rect x="40" y="560" width="46" height="180"/>
+    <rect x="96" y="600" width="34" height="140"/>
+    <rect x="150" y="540" width="40" height="200"/>
+    <rect x="620" y="580" width="42" height="160"/>
+    <rect x="672" y="540" width="30" height="200"/>
+    <rect x="712" y="600" width="48" height="140"/>
+  </g>
+
+  <!-- mid skyline, opal blue -->
+  <g fill="#80abbd">
+    <rect x="120" y="500" width="60" height="260"/>
+    <rect x="196" y="540" width="44" height="220"/>
+    <!-- Washington Monument column -->
+    <rect x="300" y="360" width="26" height="400"/>
+    <rect x="294" y="348" width="38" height="18"/>
+    <circle cx="313" cy="338" r="12"/>
+    <!-- Bromo Seltzer clock tower -->
+    <rect x="470" y="430" width="60" height="330"/>
+    <polygon points="470,430 500,392 530,430"/>
+    <rect x="490" y="452" width="20" height="20" fill="#f6f1e7" opacity="0.9"/>
+    <rect x="560" y="520" width="50" height="240"/>
+    <rect x="626" y="560" width="40" height="200"/>
+  </g>
+
+  <!-- foreground buildings, deep -->
+  <g fill="#4f7f92">
+    <rect x="60" y="640" width="80" height="160"/>
+    <rect x="220" y="620" width="70" height="180"/>
+    <rect x="360" y="600" width="90" height="200"/>
+    <rect x="520" y="640" width="76" height="160"/>
+    <rect x="660" y="620" width="90" height="180"/>
+  </g>
+  <!-- window rows on foreground -->
+  <g fill="#f6f1e7" opacity="0.28">
+    <rect x="76" y="664" width="48" height="6"/><rect x="76" y="686" width="48" height="6"/><rect x="76" y="708" width="48" height="6"/><rect x="76" y="730" width="48" height="6"/>
+    <rect x="236" y="644" width="40" height="6"/><rect x="236" y="666" width="40" height="6"/><rect x="236" y="688" width="40" height="6"/><rect x="236" y="710" width="40" height="6"/>
+    <rect x="376" y="624" width="58" height="6"/><rect x="376" y="648" width="58" height="6"/><rect x="376" y="672" width="58" height="6"/><rect x="376" y="696" width="58" height="6"/><rect x="376" y="720" width="58" height="6"/>
+    <rect x="536" y="664" width="44" height="6"/><rect x="536" y="686" width="44" height="6"/><rect x="536" y="708" width="44" height="6"/>
+    <rect x="676" y="644" width="58" height="6"/><rect x="676" y="668" width="58" height="6"/><rect x="676" y="692" width="58" height="6"/><rect x="676" y="716" width="58" height="6"/>
+  </g>
+
+  <!-- harbor water -->
+  <rect x="0" y="800" width="800" height="200" fill="url(#water)"/>
+  <g fill="#f6f1e7" opacity="0.22">
+    <rect x="40" y="838" width="120" height="4" rx="2"/>
+    <rect x="220" y="864" width="160" height="4" rx="2"/>
+    <rect x="440" y="838" width="140" height="4" rx="2"/>
+    <rect x="600" y="880" width="150" height="4" rx="2"/>
+    <rect x="120" y="906" width="180" height="4" rx="2"/>
+    <rect x="420" y="920" width="200" height="4" rx="2"/>
+  </g>
+</svg>

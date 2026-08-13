@@ -12,7 +12,8 @@
   <meta property="og:url" content="https://bhwmedical.org/about.html" />
   <meta property="og:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/bhw-tokens.css" />
   <link rel="stylesheet" href="/assets/site.css" />
 </head>
@@ -20,7 +21,13 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="/"><img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" /><span>Baltimore Healthcare &amp; Wellness</span></a>
+    <a class="brand" href="/">
+      <img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" />
+      <span>
+        <span class="nm">Baltimore Healthcare &amp; Wellness</span>
+        <span class="sub">BHW Medical Group</span>
+      </span>
+    </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav id="nav">
       <a href="/programs.html">Programs</a>
@@ -34,20 +41,20 @@
 </header>
 
 <main>
-  <div class="hero" style="padding:56px 0 40px">
-    <div class="wrap">
+  <section class="pagehead">
+    <div class="wrap narrow">
       <div class="eyebrow">About us</div>
-      <h1>Whole-person care, rooted in Baltimore</h1>
+      <h1 class="d-lg">Whole-person care, rooted in Baltimore</h1>
       <p class="lead">Baltimore Healthcare and Wellness — BHW Medical Group — was built on a simple idea: your health is connected, so your care should be too.</p>
     </div>
-  </div>
+  </section>
 
   <section>
-    <div class="wrap" style="max-width:760px">
-      <p style="font-size:18px;margin-bottom:18px">We bring primary care, behavioral health, vascular care, pediatric support, and chronic-care management together under one team — so you're treated as a whole person, not a stack of separate problems.</p>
-      <p style="font-size:18px;margin-bottom:18px">That means your primary provider, your mental-health support, and your chronic-care team actually talk to each other. It means care continues between visits, through check-ins, monitoring, and a direct line to the office. And it means education is part of the plan — because understanding your health is what makes managing it possible.</p>
-      <p style="font-size:18px">We're proud to serve Baltimore City and the surrounding counties, and to welcome new patients across most insurance plans.</p>
-      <div class="cta-row" style="margin-top:28px">
+    <div class="wrap narrow prose">
+      <p>We bring primary care, behavioral health, vascular care, pediatric support, and chronic-care management together under one team — so you're treated as a whole person, not a stack of separate problems.</p>
+      <p>That means your primary provider, your mental-health support, and your chronic-care team actually talk to each other. It means care continues between visits, through check-ins, monitoring, and a direct line to the office. And it means education is part of the plan — because understanding your health is what makes managing it possible.</p>
+      <p>We're proud to serve Baltimore City and the surrounding counties, and to welcome new patients across most insurance plans.</p>
+      <div class="cta-row" style="margin-top:28px;display:flex;gap:22px;align-items:center;flex-wrap:wrap">
         <a class="btn primary" href="/contact.html">Become a patient</a>
         <a class="btn ghost" href="/programs.html">See our programs</a>
       </div>

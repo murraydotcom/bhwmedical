@@ -12,7 +12,8 @@
   <meta property="og:url" content="https://bhwmedical.org/education.html" />
   <meta property="og:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/bhw-tokens.css" />
   <link rel="stylesheet" href="/assets/site.css" />
 </head>
@@ -20,7 +21,13 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="/"><img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" /><span>Baltimore Healthcare &amp; Wellness</span></a>
+    <a class="brand" href="/">
+      <img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" />
+      <span>
+        <span class="nm">Baltimore Healthcare &amp; Wellness</span>
+        <span class="sub">BHW Medical Group</span>
+      </span>
+    </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav id="nav">
       <a href="/programs.html">Programs</a>
@@ -34,13 +41,13 @@
 </header>
 
 <main>
-  <div class="hero" style="padding:56px 0 40px">
-    <div class="wrap">
+  <section class="pagehead">
+    <div class="wrap narrow">
       <div class="eyebrow">Health education</div>
-      <h1>Understand your health, one pillar at a time</h1>
+      <h1 class="d-lg">Understand your health, one pillar at a time</h1>
       <p class="lead">Real guidance you can act on — written for people, not textbooks. Explore a pillar below. New guides are added regularly.</p>
     </div>
-  </div>
+  </section>
 
   <section>
     <div class="wrap">
@@ -73,18 +80,19 @@
           <div class="ic">🔬</div><h3>Labs &amp; Prevention</h3>
           <p>What your screenings and lab results mean, and the preventive care that keeps you ahead.</p>
         </div>
-        <div class="card" style="background:linear-gradient(135deg,var(--deep),#22333c);color:#fff;border:0">
-          <div class="ic" style="background:rgba(255,255,255,.14);border:0">✉️</div>
-          <h3 style="color:#fff">More on the way</h3>
-          <p style="color:#c9d6d5">We're publishing new guides across every pillar. Have a topic you want covered? Tell your care team.</p>
+        <div class="card" style="background:var(--card)">
+          <div class="ic">✉️</div>
+          <h3>More on the way</h3>
+          <p>We're publishing new guides across every pillar. Have a topic you want covered? Tell your care team.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="band deep"><section class="center"><div class="wrap">
-    <h2>Education is part of your care</h2>
-    <p class="lead center" style="margin:14px auto 0">Patients of BHW get education tailored to their plan inside the patient portal — plus a care team to answer questions.</p>
+  <div class="cta"><section class="center"><div class="wrap narrow">
+    <div class="eyebrow" style="justify-content:center">For our patients</div>
+    <h2 class="d-md" style="margin-top:14px">Education is part of your care</h2>
+    <p class="lead center" style="margin:16px auto 0">Patients of BHW get education tailored to their plan inside the patient portal — plus a care team to answer questions.</p>
     <div class="cta-row" style="justify-content:center;margin-top:24px">
       <a class="btn primary" href="/contact.html">Become a patient</a>
       <a class="btn ghost" href="https://mybhw.com">Open the patient portal ↗</a>

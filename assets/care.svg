@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-label="Calm care motif">
+  <defs>
+    <linearGradient id="csky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f1e7"/>
+      <stop offset="1" stop-color="#e4e6db"/>
+    </linearGradient>
+    <linearGradient id="cwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8b59a"/>
+      <stop offset="1" stop-color="#8fa07f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="640" fill="url(#csky)"/>
+  <circle cx="700" cy="180" r="70" fill="#eaddc4" opacity="0.75"/>
+
+  <!-- rolling hills -->
+  <path d="M0,420 Q225,360 450,410 T900,400 L900,640 L0,640 Z" fill="#c9d3c4" opacity="0.7"/>
+  <path d="M0,470 Q260,410 520,460 T900,450 L900,640 L0,640 Z" fill="#a8b59a" opacity="0.85"/>
+
+  <!-- skyline silhouette on the ridge -->
+  <g fill="#4f7f92" opacity="0.92">
+    <rect x="120" y="360" width="46" height="120"/>
+    <rect x="176" y="392" width="34" height="88"/>
+    <rect x="300" y="300" width="20" height="180"/>
+    <circle cx="310" cy="292" r="9"/>
+    <rect x="430" y="330" width="50" height="150"/>
+    <polygon points="430,330 455,300 480,330"/>
+    <rect x="520" y="360" width="40" height="120"/>
+    <rect x="600" y="340" width="56" height="140"/>
+    <rect x="690" y="380" width="40" height="100"/>
+  </g>
+
+  <!-- botanical sprig, foreground -->
+  <g stroke="#6f8f6a" stroke-width="4" fill="none" opacity="0.9">
+    <path d="M120,600 C120,540 150,510 150,470"/>
+    <path d="M150,520 C170,510 190,516 200,500" />
+    <path d="M150,552 C128,544 108,548 96,532" />
+    <path d="M150,486 C168,478 188,482 198,468" />
+  </g>
+  <g fill="#8fce8f" opacity="0.85">
+    <ellipse cx="205" cy="497" rx="14" ry="7" transform="rotate(-24 205 497)"/>
+    <ellipse cx="91" cy="529" rx="14" ry="7" transform="rotate(24 91 529)"/>
+    <ellipse cx="203" cy="465" rx="12" ry="6" transform="rotate(-24 203 465)"/>
+    <circle cx="150" cy="466" r="8" fill="#e6d8bf"/>
+  </g>
+
+  <rect x="0" y="560" width="900" height="80" fill="url(#cwater)" opacity="0.35"/>
+</svg>

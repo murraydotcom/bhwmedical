@@ -12,7 +12,8 @@
   <meta property="og:url" content="https://bhwmedical.org/insurance.html" />
   <meta property="og:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/bhw-tokens.css" />
   <link rel="stylesheet" href="/assets/site.css" />
 </head>
@@ -20,7 +21,13 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="/"><img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" /><span>Baltimore Healthcare &amp; Wellness</span></a>
+    <a class="brand" href="/">
+      <img src="/assets/bhw-wellness.png" alt="Baltimore Healthcare and Wellness logo" />
+      <span>
+        <span class="nm">Baltimore Healthcare &amp; Wellness</span>
+        <span class="sub">BHW Medical Group</span>
+      </span>
+    </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav id="nav">
       <a href="/programs.html">Programs</a>
@@ -34,17 +41,17 @@
 </header>
 
 <main>
-  <div class="hero" style="padding:56px 0 40px">
-    <div class="wrap">
+  <section class="pagehead">
+    <div class="wrap narrow">
       <div class="eyebrow">Insurance &amp; access</div>
-      <h1>Most plans welcome</h1>
+      <h1 class="d-lg">Most plans welcome</h1>
       <p class="lead">We accept Medicare, Maryland Medicaid and its managed-care plans, and most major commercial insurance. Don't see yours? Call us — we'll verify your coverage before your first visit.</p>
-      <div class="cta-row" style="margin-top:22px">
+      <div class="cta-row" style="margin-top:28px;display:flex;gap:22px;align-items:center;flex-wrap:wrap">
         <a class="btn primary" href="/contact.html">Check my insurance</a>
-        <a class="btn ghost" href="tel:+14437625343">Call (443) 762-5343</a>
+        <a class="tlink" href="tel:+14437625343">Call (443) 762-5343 →</a>
       </div>
     </div>
-  </div>
+  </section>
 
   <section>
     <div class="wrap">
