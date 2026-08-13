@@ -225,6 +225,20 @@ header.site nav a.cta:hover{border-color:var(--gold)}
 .checks li{font-family:var(--font-serif);font-size:16.5px;color:var(--ink2);padding-left:30px;position:relative;line-height:1.5}
 .checks li::before{content:"";position:absolute;left:0;top:12px;width:14px;height:1px;background:var(--gold)}
 
+/* ---------- Proof-point stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:8px}
+.stats .s{background:var(--card);padding:30px 26px;text-align:center}
+.stats .s .fig{font-family:var(--font-display);font-weight:400;font-size:clamp(34px,4vw,48px);color:var(--ink-navy);line-height:1;letter-spacing:-.02em}
+.stats .s .fig em{font-style:italic;color:var(--gold)}
+.stats .s .lab{font-family:var(--font-serif);font-size:14px;color:var(--ink2);margin-top:10px;line-height:1.45}
+
+/* ---------- Founder / practice note ---------- */
+.note-card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:14px;padding:40px 44px}
+.note-card .q{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(20px,2.2vw,26px);line-height:1.5;color:var(--ink-navy)}
+.note-card .sig{font-family:var(--font-script);font-size:32px;color:var(--gold);margin-top:20px;line-height:1}
+.note-card .who{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-top:6px}
+.ph{outline:1px dashed color-mix(in srgb,var(--gold) 55%,transparent);outline-offset:3px}
+
 /* ---------- Inner page header ---------- */
 .pagehead{position:relative;overflow:hidden;padding:80px 0 58px;border-bottom:1px solid var(--line)}
 .pagehead::before{content:"";position:absolute;inset:0;z-index:0;background:
