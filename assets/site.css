@@ -234,8 +234,10 @@ header.site nav a.cta:hover{border-color:var(--gold)}
 
 /* ---------- Founder / practice note ---------- */
 .note-card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:14px;padding:40px 44px}
-.note-card .q{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(20px,2.2vw,26px);line-height:1.5;color:var(--ink-navy)}
-.note-card .sig{font-family:var(--font-script);font-size:32px;color:var(--gold);margin-top:20px;line-height:1}
+.note-card .q{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(21px,2.4vw,28px);line-height:1.45;color:var(--ink-navy)}
+.note-card .body{font-family:var(--font-serif);font-size:17px;line-height:1.75;color:var(--ink2);margin-top:18px}
+.note-card .body p{margin-bottom:16px}.note-card .body p:last-child{margin-bottom:0}
+.note-card .sig{font-family:var(--font-script);font-size:38px;color:var(--gold);margin-top:26px;line-height:1}
 .note-card .who{font-family:var(--font-ui);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-top:6px}
 .ph{outline:1px dashed color-mix(in srgb,var(--gold) 55%,transparent);outline-offset:3px}
 
