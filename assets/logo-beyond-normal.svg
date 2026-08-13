@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-label="Beyond Normal">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&amp;family=Montserrat:wght@600&amp;display=swap');
+      .bn-serif{font-family:'Playfair Display',Georgia,serif}
+      .bn-sans{font-family:'Montserrat',sans-serif}
+    </style>
+  </defs>
+  <rect width="760" height="300" fill="none"/>
+
+  <!-- horizon + rising dot: rising 'beyond' the line -->
+  <line x1="250" y1="196" x2="510" y2="196" stroke="#a86f45" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="510" cy="196" r="6.5" fill="#a86f45"/>
+  <path d="M566 196 q60 -6 118 -58" fill="none" stroke="#e0b878" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7"/>
+
+  <!-- wordmark -->
+  <text x="380" y="150" text-anchor="middle" class="bn-serif" font-style="italic" font-weight="500"
+        font-size="112" fill="#182a38" letter-spacing="-1">Beyond</text>
+  <text x="380" y="240" text-anchor="middle" class="bn-sans" font-weight="600"
+        font-size="40" fill="#a86f45" letter-spacing="20">NORMAL</text>
+</svg>

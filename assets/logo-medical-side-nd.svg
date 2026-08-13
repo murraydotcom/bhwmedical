@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="The Medical Side of Neurodivergence">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Montserrat:wght@600&amp;display=swap');
+      .nd-serif{font-family:'Playfair Display',Georgia,serif}
+      .nd-sans{font-family:'Montserrat',sans-serif}
+    </style>
+  </defs>
+  <rect width="640" height="380" fill="none"/>
+
+  <!-- neurodivergence infinity (gold) -->
+  <path d="M320,120 C288,74 236,74 236,120 C236,166 288,166 320,120
+           C352,74 404,74 404,120 C404,166 352,166 320,120 Z"
+        fill="none" stroke="#a86f45" stroke-width="7.5" stroke-linejoin="round"/>
+  <!-- pale-gold echo, the 'spectrum' -->
+  <path d="M320,120 C288,74 236,74 236,120 C236,166 288,166 320,120
+           C352,74 404,74 404,120 C404,166 352,166 320,120 Z"
+        fill="none" stroke="#e0b878" stroke-width="2" stroke-linejoin="round" opacity="0.6"
+        transform="translate(0,7)"/>
+
+  <!-- medical pulse through the center (navy) -->
+  <path d="M214,120 H292 l9,-30 l12,54 l10,-38 l6,14 H426"
+        fill="none" stroke="#182a38" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- wordmark -->
+  <text x="320" y="252" text-anchor="middle" class="nd-sans" font-weight="600"
+        font-size="19" fill="#a86f45" letter-spacing="8">THE MEDICAL SIDE OF</text>
+  <text x="320" y="318" text-anchor="middle" class="nd-serif" font-weight="500"
+        font-size="60" fill="#182a38" letter-spacing="-1">Neurodivergence</text>
+</svg>

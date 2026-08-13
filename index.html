@@ -19,13 +19,11 @@
   <meta name="twitter:image" content="https://bhwmedical.org/assets/bhw-wellness.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/bhw-tokens.css" />
   <link rel="stylesheet" href="/assets/site.css" />
 
-  <!-- Local-business structured data — the canonical local-SEO home for the practice.
-       NAP confirmed with the practice; geo is approximate (Google uses the verified
-       address + Google Business Profile for the map pin). Add the GBP URL to sameAs. -->
+  <!-- Local-business structured data — the canonical local-SEO home for the practice. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -76,30 +74,41 @@
     </a>
     <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <nav id="nav">
-      <a href="/programs.html">Programs</a>
-      <a href="/education.html">Education</a>
+      <a href="#domains">Care</a>
+      <a href="#team">Providers</a>
       <a href="/insurance.html">Insurance</a>
+      <a href="/education.html">Education</a>
       <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a class="cta" href="https://mybhw.com">Patient Portal ↗</a>
+      <a class="cta" href="#schedule">Schedule ↓</a>
     </nav>
   </div>
 </header>
 
+<!-- Audience sub-bar: keeps the patient side separate (→ myBHW.com) -->
+<div class="subbar">
+  <div class="wrap in">
+    <div class="crumb">BHW Medical <b>/</b> New &amp; Prospective Patients</div>
+    <div class="aud">
+      <a class="on" href="/">For New Patients</a>
+      <a href="https://mybhw.com">Current Patient Portal ↗</a>
+    </div>
+  </div>
+</div>
+
 <main>
-  <!-- HERO -->
+  <!-- ================= HERO ================= -->
   <section class="hero">
     <div class="wrap">
       <div class="copy">
-        <div class="eyebrow">Primary care · Baltimore, MD</div>
-        <h1 class="d-xl">Your care,<br />made calm.</h1>
-        <p class="lead">Baltimore Healthcare and Wellness brings primary care, behavioral health, vascular care, and chronic-care management together under one roof — with real education so you understand your health, not just treat it.</p>
+        <div class="section-head"><span class="num">01</span><span class="lbl">Primary &amp; whole-person care · Baltimore, MD</span></div>
+        <h1 class="d-xl">Your care,<br />made <em class="ac">calm.</em></h1>
+        <p class="lead">Baltimore Healthcare and Wellness brings primary care, behavioral health, vascular care, and chronic-care management together under one roof — care that takes your whole life seriously and refers cleanly across every specialty without restarting your story.</p>
         <div class="cta-row">
-          <a class="btn primary" href="/contact.html">Become a patient</a>
-          <a class="tlink" href="/programs.html">Explore our programs →</a>
+          <a class="btn primary" href="#schedule">Request a consult</a>
+          <a class="tlink" href="#domains">How we work →</a>
         </div>
         <div class="trust">
-          <span><b>Accepting new patients</b> <span class="dot"></span> most insurance welcome</span>
+          <span><b>Accepting new patients</b><span class="dot"></span>most insurance welcome</span>
           <span>Serving <b>Baltimore City</b> &amp; surrounding counties</span>
         </div>
       </div>
@@ -107,124 +116,150 @@
         <div class="frame">
           <img src="/assets/hero.svg" alt="Baltimore skyline at dawn — the community BHW Medical Group serves" />
         </div>
-        <div class="tag"><span class="q">“We treat people, not problem lists.”</span></div>
+        <div class="tag">
+          <div class="k">In-network with</div>
+          <div class="v">CareFirst BCBS · Aetna · Cigna · UnitedHealthcare · Johns Hopkins EHP · Medicare · Maryland Medicaid</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS — editorial rows -->
-  <section id="programs">
+  <!-- ================= WHAT WE TREAT — DOMAINS ================= -->
+  <section class="domains" id="domains">
     <div class="wrap">
-      <div class="eyebrow">Our programs</div>
-      <h2 class="d-lg" style="margin-top:14px">Complete care, coordinated under one roof</h2>
-      <p class="lead" style="margin-top:16px">Each program is built around the whole person — so your primary care, mental health, and chronic conditions work together instead of in silos.</p>
-
-      <div class="rows" style="margin-top:44px">
-        <a class="row" href="/programs.html#primary-care">
-          <span class="idx">01</span>
-          <span class="body">
-            <h3>Primary Care</h3>
-            <p>Your medical home — annual wellness, preventive screenings, sick visits, and ongoing management of everyday and complex conditions.</p>
-          </span>
-          <span class="go">→</span>
+      <div class="section-head"><span class="num">02</span><span class="lbl">What we treat — five connected programs</span></div>
+      <h2 class="d-lg">Your health doesn't live in silos.<br /><em class="ac">Neither do we.</em></h2>
+      <div class="domain-row">
+        <a class="domain" href="/programs.html#primary-care">
+          <div class="ic" style="background:var(--h-primary)">P</div>
+          <h4>Primary Care</h4>
+          <p>Your medical home — annual wellness, preventive screenings, and management of everyday and complex conditions.</p>
+          <span class="go">Learn more →</span>
         </a>
-        <a class="row" href="/programs.html#mind-mood">
-          <span class="idx">02</span>
-          <span class="body">
-            <h3>Mind &amp; Mood</h3>
-            <p>Integrated behavioral health and recovery support — depression, anxiety, and substance-use care woven into your primary care.</p>
-          </span>
-          <span class="go">→</span>
+        <a class="domain" href="/programs.html#mind-mood">
+          <div class="ic" style="background:var(--h-mind)">M</div>
+          <h4>Mind &amp; Mood</h4>
+          <p>Integrated behavioral health and recovery — depression, anxiety, and substance-use care woven into primary care.</p>
+          <span class="go">Learn more →</span>
         </a>
-        <a class="row" href="/programs.html#flow">
-          <span class="idx">03</span>
-          <span class="body">
-            <h3>Flow</h3>
-            <p>Vascular and circulation care — evaluation, monitoring, and vein-health support to keep you moving comfortably.</p>
-          </span>
-          <span class="go">→</span>
+        <a class="domain" href="/programs.html#flow">
+          <div class="ic" style="background:var(--h-flow)">F</div>
+          <h4>Flow</h4>
+          <p>Vascular and circulation care — evaluation, monitoring, and vein-health support to keep you moving comfortably.</p>
+          <span class="go">Learn more →</span>
         </a>
-        <a class="row" href="/programs.html#charmed">
-          <span class="idx">04</span>
-          <span class="body">
-            <h3>CharmEd Minds</h3>
-            <p>Pediatric and executive-function support — helping kids and families build focus, resilience, and healthy routines.</p>
-          </span>
-          <span class="go">→</span>
+        <a class="domain" href="/programs.html#charmed">
+          <div class="ic" style="background:var(--h-charmed)">C</div>
+          <h4>CharmEd Minds</h4>
+          <p>Pediatric and executive-function support — helping kids and families build focus, resilience, and routines.</p>
+          <span class="go">Learn more →</span>
         </a>
-        <a class="row" href="/programs.html#chronic-care">
-          <span class="idx">05</span>
-          <span class="body">
-            <h3>Chronic Care Management</h3>
-            <p>CCM, APCM &amp; remote monitoring — a care team that checks in between visits so nothing about your health falls through the cracks.</p>
-          </span>
-          <span class="go">→</span>
+        <a class="domain" href="/programs.html#chronic-care">
+          <div class="ic" style="background:var(--h-chronic)">+</div>
+          <h4>Chronic Care</h4>
+          <p>CCM, APCM &amp; remote monitoring — a care team that checks in between visits so nothing falls through the cracks.</p>
+          <span class="go">Learn more →</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE BAND -->
-  <section class="quote">
-    <div class="wrap narrow center">
-      <div class="mark">“</div>
-      <blockquote>Whole-person, whole-family, whole-community.</blockquote>
-      <cite>The way we practice medicine in Baltimore</cite>
+  <!-- ================= CARE TEAM ================= -->
+  <section id="team">
+    <div class="wrap">
+      <div class="section-head"><span class="num">03</span><span class="lbl">Your clinical team</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px">
+        <h2 class="d-lg" style="max-width:620px">Generalists trained in <em class="ac">depth.</em></h2>
+        <a class="tlink" href="/about.html">About the practice →</a>
+      </div>
+      <!-- Placeholder cards — real names, credentials & photos drop in here -->
+      <div class="provider-row">
+        <div class="provider"><div class="pic"><div class="mono">IM</div></div><div class="body"><div class="nm">Internal Medicine</div><div class="ti">MD · Primary care</div><div class="sub">Metabolic and cardiovascular focus across the adult lifespan.</div></div></div>
+        <div class="provider"><div class="pic" style="--h-primary:var(--h-mind)"><div class="mono">BH</div></div><div class="body"><div class="nm">Behavioral Health</div><div class="ti">Mind &amp; Mood</div><div class="sub">Depression, anxiety, and recovery — coordinated with your PCP.</div></div></div>
+        <div class="provider"><div class="pic"><div class="mono">NP</div></div><div class="body"><div class="nm">Nurse Practitioner</div><div class="ti">Same-week visits</div><div class="sub">Sick visits, women's health, and chronic-condition follow-up.</div></div></div>
+        <div class="provider"><div class="pic"><div class="mono">CN</div></div><div class="body"><div class="nm">Care Navigation</div><div class="ti">Between visits</div><div class="sub">Insurance, referrals, and records — handled by our team, not you.</div></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- EDUCATION — pillars -->
+  <!-- ================= INSURANCE — DARK BAND ================= -->
+  <section class="dark" id="insurance-band">
+    <div class="wrap">
+      <div class="section-head on-dark"><span class="num">04</span><span class="lbl">Insurance &amp; access</span></div>
+      <div style="display:flex;gap:48px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap">
+        <h2 class="d-lg" style="max-width:620px">Most major plans accepted. <em style="font-style:italic;color:var(--pale-gold)">No surprises.</em></h2>
+        <p class="lead" style="max-width:400px">Coverage verified before your first visit. Self-pay welcome with transparent pricing — we'll confirm your specific plan up front.</p>
+      </div>
+      <div class="ix-grid">
+        <div class="ix-card"><div class="nm">CareFirst BCBS</div><div class="ty">In-network</div></div>
+        <div class="ix-card"><div class="nm">Aetna</div><div class="ty">In-network</div></div>
+        <div class="ix-card"><div class="nm">Cigna</div><div class="ty">In-network</div></div>
+        <div class="ix-card"><div class="nm">UnitedHealthcare</div><div class="ty">In-network</div></div>
+        <div class="ix-card"><div class="nm">Johns Hopkins EHP</div><div class="ty">In-network</div></div>
+        <div class="ix-card"><div class="nm">Medicare</div><div class="ty">Accepted</div></div>
+        <div class="ix-card"><div class="nm">Maryland Medicaid</div><div class="ty">Accepted</div></div>
+        <div class="ix-card"><div class="nm">Maryland Physicians Care</div><div class="ty">MCO</div></div>
+        <div class="ix-card"><div class="nm">Priority Partners</div><div class="ty">MCO</div></div>
+        <div class="ix-card"><div class="nm">Self-pay</div><div class="ty">Transparent</div></div>
+        <div class="ix-card"><div class="nm">HSA / FSA</div><div class="ty">Accepted</div></div>
+        <a class="ix-card" href="/insurance.html" style="text-decoration:none"><div class="nm">Your plan?</div><div class="ty">Verify in 24h →</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION TEASER ================= -->
   <section id="education">
     <div class="wrap">
-      <div class="eyebrow">Health education</div>
-      <h2 class="d-lg" style="margin-top:14px">Understand your health — one pillar at a time</h2>
-      <p class="lead" style="margin-top:16px">Care doesn't stop at the visit. Our education hub turns everyday wellness into clear, doable steps across the pillars that shape how you feel.</p>
-
+      <div class="section-head"><span class="num">05</span><span class="lbl">Health education · BHW EduMedia</span></div>
+      <h2 class="d-lg">Care doesn't stop at the visit. <em class="ac">Neither does learning.</em></h2>
+      <p class="lead" style="margin-top:16px">Plain-language guidance across the pillars that shape how you feel — the education layer behind your care plan.</p>
       <div class="pillars">
         <a href="/education.html#nutrition"><div class="p-i">🥗</div><div class="p-n">Nutrition</div><div class="p-d">Everyday eating for energy, blood sugar, and heart health.</div></a>
         <a href="/education.html#sleep"><div class="p-i">😴</div><div class="p-n">Sleep</div><div class="p-d">Why rest matters for mood and metabolism — and how to get more.</div></a>
         <a href="/education.html#mental-health"><div class="p-i">🧘</div><div class="p-n">Mental Health</div><div class="p-d">Stress, mood, and coping skills — plus when to reach out.</div></a>
-        <a href="/education.html#gut-health"><div class="p-i">🌱</div><div class="p-n">Gut Health</div><div class="p-d">How digestion connects to the rest of your health.</div></a>
         <a href="/education.html#movement"><div class="p-i">🏃</div><div class="p-n">Movement</div><div class="p-d">Motion that fits real life, at any starting point.</div></a>
+        <a href="/education.html#gut-health"><div class="p-i">🌱</div><div class="p-n">Gut Health</div><div class="p-d">How digestion connects to the rest of your health.</div></a>
         <a href="/education.html#labs"><div class="p-i">🔬</div><div class="p-n">Labs &amp; Prevention</div><div class="p-d">What your screenings mean and how to stay ahead.</div></a>
       </div>
-      <div class="cta-row" style="margin-top:34px">
-        <a class="tlink" href="/education.html">Visit the education hub →</a>
-      </div>
+      <div class="cta-row" style="margin-top:32px"><a class="tlink" href="/education.html">Visit the education hub →</a></div>
     </div>
   </section>
 
-  <!-- WHY BHW — split -->
-  <section id="why" class="cta">
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <div class="eyebrow">Why BHW</div>
-          <h2 class="d-md" style="margin-top:14px">Care that stays with you between visits</h2>
-          <p class="lead" style="margin-top:16px">We listen first, coordinate your care across every program, and meet you where you are — in the office, by phone, or through your patient portal.</p>
-          <ul class="checks">
-            <li>One connected team across primary care, behavioral health, and chronic care</li>
-            <li>Care between visits — check-ins, monitoring, and a message line to the office</li>
-            <li>Education that helps you make confident, everyday decisions</li>
-            <li>Rooted in Baltimore, serving the city and surrounding counties</li>
+  <!-- ================= SCHEDULE ================= -->
+  <section class="cta" id="schedule">
+    <div class="wrap narrow">
+      <div class="sched-card">
+        <div class="left">
+          <div class="eyebrow" style="color:var(--pale-gold);margin-bottom:18px">06 · Become a patient</div>
+          <h3>Request a 15-minute consult</h3>
+          <p>A brief call with our team to match you with the right provider and confirm your coverage. No charge, no pressure.</p>
+          <ul>
+            <li>Same-week scheduling for most plans</li>
+            <li>Coverage verified before your first visit</li>
+            <li>Records request handled by our team</li>
+            <li>Serving Baltimore City &amp; surrounding counties</li>
           </ul>
         </div>
-        <div class="frame">
-          <img src="/assets/care.svg" alt="Rolling hills and Baltimore skyline" />
+        <div class="right">
+          <form id="cf" class="sform">
+            <div class="f"><label for="fn">First name *</label><input id="fn" required /></div>
+            <div class="f"><label for="ln">Last name</label><input id="ln" /></div>
+            <div class="f col-2"><label for="ph">Phone *</label><input id="ph" type="tel" required /></div>
+            <div class="f col-2"><label for="em">Email</label><input id="em" type="email" /></div>
+            <div class="f col-2"><label for="ins">Insurance carrier</label>
+              <select id="ins">
+                <option>CareFirst BCBS</option><option>Aetna</option><option>Cigna</option>
+                <option>UnitedHealthcare</option><option>Johns Hopkins EHP</option><option>Medicare</option>
+                <option>Maryland Medicaid / MCO</option><option>Self-pay</option><option>Other / not sure</option>
+              </select>
+            </div>
+            <div class="f col-2"><label for="msg">What's bringing you in?</label><textarea id="msg"></textarea></div>
+            <div style="position:absolute;left:-9999px"><label>Leave blank<input id="hp" tabindex="-1" autocomplete="off" /></label></div>
+            <button class="btn primary col-2" type="submit" id="send" style="justify-content:center">Request consult</button>
+            <p class="snote" id="snote">By submitting you agree we may contact you about care. Please don't include sensitive medical details here. Prefer to call? <a href="tel:+14437625343" style="color:var(--gold-deep)">(443) 762-5343</a>.</p>
+            <div class="sent" id="sent"><div class="big">Received.</div><p style="font-family:var(--font-serif);color:var(--ink2)">A member of our team will reach out within one business day. For anything urgent, call (443)&nbsp;762-5343.</p></div>
+          </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLOSING CTA -->
-  <section class="center">
-    <div class="wrap narrow">
-      <div class="eyebrow" style="justify-content:center">Ready when you are</div>
-      <h2 class="d-lg" style="margin-top:14px">We've got you.</h2>
-      <p class="lead" style="margin:16px auto 0">New patients are welcome. Tell us a little about you and our team will help you get started — including checking your insurance.</p>
-      <div class="cta-row" style="justify-content:center;gap:22px;margin-top:30px">
-        <a class="btn primary" href="/contact.html">Become a patient</a>
-        <a class="btn line" href="tel:+14437625343">Call (443) 762-5343</a>
       </div>
     </div>
   </section>
@@ -254,19 +289,17 @@
         <a href="/programs.html#chronic-care">Chronic Care</a>
       </div>
       <div>
-        <h4>Learn</h4>
+        <h4>Patients</h4>
+        <a href="https://mybhw.com">Patient Portal ↗</a>
+        <a href="/insurance.html">Insurance Accepted</a>
+        <a href="#schedule">Become a Patient</a>
         <a href="/education.html">Education Hub</a>
-        <a href="/education.html#nutrition">Nutrition</a>
-        <a href="/education.html#sleep">Sleep</a>
-        <a href="/education.html#mental-health">Mental Health</a>
-        <a href="/education.html#movement">Movement</a>
       </div>
       <div>
         <h4>Practice</h4>
-        <a href="/insurance.html">Insurance Accepted</a>
         <a href="/about.html">About Us</a>
         <a href="/contact.html">Contact</a>
-        <a href="https://mybhw.com">Patient Portal ↗</a>
+        <a href="#team">Our Team</a>
       </div>
     </div>
     <div class="fine">
@@ -279,6 +312,31 @@
 <script>
   document.querySelectorAll('#nav a').forEach(function (a) {
     a.addEventListener('click', function () { document.getElementById('nav').classList.remove('open'); });
+  });
+  // Consult request -> Front Desk triage queue (portal-message allows bhwmedical.org origins)
+  var OFFICE_API = 'https://bhwcrewos.netlify.app/.netlify/functions/portal-message';
+  document.getElementById('cf').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var fn = document.getElementById('fn').value.trim();
+    var ln = document.getElementById('ln').value.trim();
+    var ph = document.getElementById('ph').value.trim();
+    var em = document.getElementById('em').value.trim();
+    var ins = document.getElementById('ins').value;
+    var msg = document.getElementById('msg').value.trim();
+    var name = (fn + ' ' + ln).trim();
+    if (!name || !ph) { alert('Please add your name and phone.'); return; }
+    var full = '[Consult request — bhwmedical.org] Insurance: ' + ins + '.' + (em ? ' Email: ' + em + '.' : '') + (msg ? ' ' + msg : '');
+    var btn = document.getElementById('send'); btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      var r = await fetch(OFFICE_API, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name, phone: ph, message: full, hp: document.getElementById('hp').value }) });
+      if (!r.ok) throw new Error('bad status');
+      document.querySelectorAll('#cf .f, #cf button, #snote').forEach(function (el) { el.style.display = 'none'; });
+      document.getElementById('sent').style.display = 'block';
+    } catch (_) {
+      btn.disabled = false; btn.textContent = 'Request consult';
+      alert('Sorry — that didn’t send. Please call (443) 762-5343 and we’ll help right away.');
+    }
   });
 </script>
 </body>
