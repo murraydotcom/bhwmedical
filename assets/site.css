@@ -22,7 +22,7 @@
   --ink-navy:#182a38;          /* display headlines */
   --ink:#33424a;               /* body */
   --ink2:#5c6b6c;              /* secondary */
-  --ink-soft:#8a8578;
+  --ink-soft:#6f6a5e;
   --obsidian:#0f141a;          /* dark bands */
   --gold:#a86f45;              /* bronze accent — italic words, eyebrows */
   --gold-deep:#8c5a3c;
@@ -65,13 +65,13 @@ p{color:var(--ink2)}
 .serif{font-family:var(--font-serif)}
 .script{font-family:var(--font-script);color:var(--gold);font-weight:600}
 .lead{font-family:var(--font-serif);font-weight:400;font-size:clamp(18px,1.6vw,20px);line-height:1.72;color:var(--ink2);max-width:62ch}
-.eyebrow{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:11px}
+.eyebrow{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);display:inline-flex;align-items:center;gap:11px}
 .eyebrow.muted{color:var(--ink-soft)}
 .center{text-align:center}.center .lead{margin-inline:auto}
 
 /* section head: number + eyebrow */
 .section-head{display:flex;gap:14px;align-items:center;margin-bottom:26px}
-.section-head .num{font-family:var(--font-ui);font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold)}
+.section-head .num{font-family:var(--font-ui);font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold-deep)}
 .section-head .lbl{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
 .section-head.on-dark .lbl{color:rgba(247,243,234,.6)}
 .section-head.on-dark .num{color:var(--pale-gold)}
@@ -83,8 +83,8 @@ p{color:var(--ink2)}
 .btn:hover{transform:translateY(-1px)}
 .btn.primary{background:var(--ink-navy);color:var(--bg)}
 .btn.primary:hover{background:#0f2029}
-.btn.gold{background:var(--gold);color:#fff}
-.btn.gold:hover{background:var(--gold-deep)}
+.btn.gold{background:var(--gold-deep);color:#fff}
+.btn.gold:hover{background:#74472f}
 .btn.line{background:transparent;color:var(--ink-navy);border-color:rgba(24,42,56,.22)}
 .btn.line:hover{border-color:var(--gold);color:var(--gold-deep)}
 .btn.ghost{background:transparent;color:var(--ink-navy);border-color:rgba(24,42,56,.22)}
@@ -111,7 +111,7 @@ header.site nav a.cta:hover{border-color:var(--gold)}
 .subbar{border-bottom:1px solid var(--line);background:var(--ivory)}
 .subbar .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;flex-wrap:wrap}
 .subbar .crumb{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
-.subbar .crumb b{color:var(--gold)}
+.subbar .crumb b{color:var(--gold-deep)}
 .aud{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
 .aud a{font-family:var(--font-ui);font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);
   padding:9px 18px;border-radius:999px;text-decoration:none;transition:.2s}
@@ -194,7 +194,7 @@ header.site nav a.cta:hover{border-color:var(--gold)}
 .provider .pic .mono{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-display);font-weight:500;font-size:44px;color:rgba(255,255,255,.5)}
 .provider .body{padding:18px 20px}
 .provider .nm{font-family:var(--font-display);font-weight:500;font-size:19px;color:var(--ink-navy)}
-.provider .ti{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:5px 0 8px}
+.provider .ti{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin:5px 0 8px}
 .provider .sub{font-family:var(--font-serif);font-size:14px;color:var(--ink2);line-height:1.55}
 
 /* ---------- Schedule card ---------- */
@@ -209,7 +209,7 @@ header.site nav a.cta:hover{border-color:var(--gold)}
 .sform{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .sform .f{display:flex;flex-direction:column}
 .sform .f.col-2{grid-column:1/-1}
-.sform label{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.sform label{font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:6px}
 .sform input,.sform select,.sform textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:var(--bg);font:inherit;font-size:15px;color:var(--ink)}
 .sform textarea{font-family:var(--font-serif);min-height:80px;resize:vertical}
 .sform input:focus,.sform select:focus,.sform textarea:focus{outline:none;border-color:var(--gold)}
